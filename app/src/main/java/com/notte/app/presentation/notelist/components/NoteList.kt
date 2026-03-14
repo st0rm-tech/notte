@@ -1,5 +1,6 @@
 package com.notte.app.presentation.notelist.components
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.runtime.Composable
@@ -12,6 +13,7 @@ import com.notte.app.domain.model.Note
  * Grid list of notes with responsive layout.
  * Shows 1 column on narrow screens, 2 columns on wider screens.
  */
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun NoteList(
     notes: List<Note>,
